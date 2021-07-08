@@ -1,0 +1,10 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@material-ui/styled-engine": "@material-ui/styled-engine-sc"
+      }
+    }]
+  ]
+}

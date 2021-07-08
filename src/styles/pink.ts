@@ -1,7 +1,7 @@
-import { css } from '@material-ui/styled-engine-sc';
+import { Theme } from '@material-ui/core/styles';
 
-const pink = css`
-  color: ${({ theme }): string => theme.custom.pink};
+const pink = ({ theme }: { theme: Theme }) => `
+  color: ${theme.custom.pink};
 `;
 
 export {

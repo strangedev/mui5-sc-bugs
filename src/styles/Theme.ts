@@ -12,11 +12,6 @@ declare module '@material-ui/core/styles' {
   }
 }
 
-declare module 'styled-components' {
-  export interface DefaultTheme {
-    custom: CustomTheme;
-  }
-}
 
 export type {
   CustomTheme

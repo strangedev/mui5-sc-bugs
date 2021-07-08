@@ -1,8 +1,8 @@
-module.exports = {
-  reactStrictMode: true,
-  webpack (config) {
-    config.resolve.alias['@material-ui/styled-engine'] = '@material-ui/styled-engine-sc';
+const withTranspiledModules = require('next-transpile-modules');
 
-    return config;
-  }
-}
+module.exports = withTranspiledModules([
+  '@material-ui/core',
+  '@material-ui/system'
+])({
+  reactStrictMode: true
+});
