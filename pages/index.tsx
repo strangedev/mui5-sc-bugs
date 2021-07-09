@@ -1,7 +1,12 @@
+import { Fragment } from 'react';
 import { PinkText } from '../src/components/PinkText'
+import { WithTheme } from '../src/components/WithTheme';
 
 export default function Home() {
   return (
-    <PinkText>I&apos;m pink!</PinkText>
+    <Fragment>
+      <WithTheme/>
+      <PinkText>I&apos;m pink!</PinkText>
+    </Fragment>
   )
 }
